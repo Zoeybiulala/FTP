@@ -7,7 +7,7 @@ const axios = require('axios');
 
 const app = express();
 
-app.use(cors({ credentials: true, origin: 'localhost:3000','https://ftp-eight.vercel.app/', 'https://ftp-7vk24sew7-zoeybiulala.vercel.app' }));
+app.use(cors({ credentials: true, origin: ['http://localhost:3000', 'https://ftp-eight.vercel.app', 'https://ftp-7vk24sew7-zoeybiulala.vercel.app'] }));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
