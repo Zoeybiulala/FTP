@@ -1,16 +1,12 @@
 // const axios = require('axios');
 //
 // const aeroapi_url = "https://aeroapi.flightaware.com/aeroapi/";
-require('dotenv').config();
 const axios = require('axios');
 const fs = require('fs');
 const csv = require('csv-parser');
-// const stripBomStream = require('strip-bom-stream');
 const confirmedUrl = './data/covid_cases_confirmed.csv';
 const deathUrl = './data/covid_cases_dead.csv';
 const flightsUrl = './data/flightByStatebyMonth.csv';
-const aeroapiUrl = 'https://aeroapi.flightaware.com/aeroapi/';
-// console.log("key: " + process.env.AERO_API_KEY);
 /* -------------------------------------------------- */
 /* ------------------- Route Handlers --------------- */
 /* -------------------------------------------------- */

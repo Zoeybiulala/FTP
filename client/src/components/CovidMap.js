@@ -38,17 +38,17 @@ function CovidMap (props) {
     const month = props.selectedMonth;
 
     useEffect(() => {
-        fetch(`http://localhost:8080/covid/confirm?month=${month}&region=${region}`)
+        fetch(`https://ftp-server.vercel.app/covid/confirm?month=${month}&region=${region}`)
             .then(res => res.json())
             .then(resJson => {
                 setConfirmedCases(resJson['total number']);
             })
-        fetch(`http://localhost:8080/covid/death?month=${month}&region=${region}`)
+        fetch(`https://ftp-server.vercel.app/covid/death?month=${month}&region=${region}`)
             .then(res => res.json())
             .then(resJson => {
                 setDeaths(resJson['total number']);
             })
-        fetch(`http://localhost:8080/fly?month=${month}&region=${region}`)
+        fetch(`https://ftp-server.vercel.app/fly?month=${month}&region=${region}`)
             .then(res => res.json())
             .then(resJson => {
                 setCancel(resJson['cancel']);
