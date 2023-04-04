@@ -26,4 +26,4 @@ app.get('/fly', routes.getFlightInfo);
 // app.listen(8080, () => {
 // 	console.log(`Server listening on PORT 8080`);
 // });
-module.exports(app);
+module.exports = app;
