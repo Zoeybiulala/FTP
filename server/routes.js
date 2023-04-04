@@ -1,7 +1,3 @@
-// const axios = require('axios');
-//
-// const aeroapi_url = "https://aeroapi.flightaware.com/aeroapi/";
-const axios = require('axios');
 const fs = require('fs');
 const csv = require('csv-parser');
 const confirmedUrl = './data/covid_cases_confirmed.csv';
