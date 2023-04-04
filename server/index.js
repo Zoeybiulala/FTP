@@ -24,6 +24,6 @@ app.get('/covid/confirm', routes.getTotalCase);
 app.get('/covid/death', routes.getTotalDeath);
 app.get('/fly', routes.getFlightInfo);
 
-app.listen(8080, () => {
-	console.log(`Server listening on PORT 8080`);
+app.listen(process.env.PORT || 8080, () => {
+	console.log(`Server listening on port ${process.env.PORT || 8080}`);
 });
