@@ -1,7 +1,7 @@
 {
   "functions": {
     "server/*": {
-      "runtime": "node12",
+      "runtime": "node14",
       "memory": 256
     }
   }
