@@ -23,7 +23,7 @@ app.get('/covid/confirm', routes.getTotalCase);
 app.get('/covid/death', routes.getTotalDeath);
 app.get('/fly', routes.getFlightInfo);
 
-// app.listen(8080, () => {
-// 	console.log(`Server listening on PORT 8080`);
-// });
+app.listen(8080, () => {
+	console.log(`Server listening on PORT 8080`);
+});
 module.exports = app;
