@@ -1,4 +1,4 @@
-const routes = require("../routes");
+const routes = require("./routes");
 const app = require('express')();
 
 app.get('/covid/confirm', routes.getTotalCase);
