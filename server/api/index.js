@@ -1,8 +1,8 @@
-const routes = require("./routes");
+const routes = require("./routes.js");
 const app = require('express')();
 
-app.get('/covid/confirm', routes.getTotalCase);
-app.get('/covid/death', routes.getTotalDeath);
-app.get('/fly', routes.getFlightInfo);
+app.get('/api/covid/confirm', routes.getTotalCase);
+app.get('/api/covid/death', routes.getTotalDeath);
+app.get('/api/fly', routes.getFlightInfo);
 
 module.exports = app;
